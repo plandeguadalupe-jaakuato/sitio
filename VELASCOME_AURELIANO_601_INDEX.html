@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aureliano 601</title>
+	<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+	<style>
+
+		html{
+			--colorblanco:#FFFFFF;
+			--colornegro:#000000;
+			--colorazul:#124F88;
+			--colorazulmarino:#344460;
+			--colorgris:#E5E5E5;
+			--coloramarillo:#F7C331;
+			}
+		body{
+			font-family: ´OSWALD´ ,Sans-serif;
+			background: var(--colorblanco);
+			color:var(--colornegro);
+			
+		}
+		a{
+			text-decoration: none;
+			color:var(--colornegro);
+			border: 2px var(--colorazul) solid;
+		}
+		li{
+			border: 2px var(--coloramarillo) solid;
+		}
+		div{
+			border: 2px var(--coloramarillo) solid;
+		}
+		ul{
+			border: 2px var(--colorgris) solid;
+		}
+		.contenedormenu{
+			/*border: 2px var(--colornegro) solid;*/
+			display: flex;
+			justify-content: space-between;
+			padding: 10px;
+			max-width: 900px;
+			margin: 0 auto;
+
+		}
+		.encabezado{
+			/*border: 2px var(--coloramarillo) solid;*/
+			box-shadow: 0 4px 5px var(--colorazul);
+			position: sticky;
+			left:0;
+			top:0;
+			background: var(--colorblanco);
+			width: 100%;
+			z-index: 100;
+		}
+		.logo{
+			display: flex;
+			align-items: center;
+			font-size: 18px;
+			font-weight: 200;
+			color:var(--colorazul);
+		}
+		.logo img{
+			border-radius: 50%;
+		}
+		.menu{
+			display: flex;
+			list-style: none;
+			margin:0;
+			padding:0;
+		}
+		.menu li{
+			padding:0 15px;
+		}
+		.menu a{
+			font-size:20px;
+			font-weight: 600;
+			text-transform: uppercase;
+			line-height: 50px;
+		}
+		/****************perfil***********/
+  
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+		.perfilseccion{
+         text-align:center;
+         background-color: var(--coloramarillo)
+		}
+		.perfilcontenedor{
+         margin-top: 10px;
+       
+		}
+		.perfiltitulo{
+         margin: 0;
+         color: var(--colorazul);
+         font-size: 35px;
+         font-weight: bold;
+         font-family: "Noto Sans", sans-serif;
+		}
+		.perfildetalles{
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 2;
+		max-width: 200px;
+		margin:20px auto;
+
+		}
+		.perfilbotondescargar{
+        background-color: var(--colorazulmarino);
+        color:var(--colorblanco);
+        border: none;
+        font-size: 20px;
+        padding: 0.5em 1em;
+        border-radius: 7px;
+        cursor: pointer;
+		}
+		.perfilbotondescargar:hover{
+			filter: brightness(150%);
+		}
+		.perfilfoto{
+        position: relative;
+        display: inline;
+		}
+		.fotoperfilpng{
+			width: 80%;
+			max-width: 500px;
+        }
+		.perfillineaamarilla{
+         background-color: var(--colorazul);
+         height: 40px;
+         position: absolute;
+         width: 100%;
+         left: 0;
+         bottom:0;
+		}
+		/****cambio de pantalla para el perfil***/
+
+		@media (min-width: 700px) {
+			@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+		.perfilseccion{
+           display: flex;
+           text-align: left;
+           justify-content: space-between;
+           max-width: 900px;
+           margin: 0 auto;
+		}
+		.perfilcontenedor{
+         
+		}
+		.perfiltitulo{
+         
+		}
+		.perfildetalles{
+		
+
+		}
+		.perfilbotondescargar{
+        
+		}
+		.perfilbotondescargar:hover{
+			
+		}
+		.perfilfoto{
+       
+		}
+		.fotoperfilpng{
+		width: 100%;
+		max-width: 700px;
+		transform: scaleX(-1);
+        }
+		.perfillineaamarilla{
+         
+		}
+		
+	</style>
+	
+</head>
+<body>
+	  <header class="encabezado">
+	  	     <nav class="contenedormenu">
+	  	     	 <a href="#" class="logo">
+	  	     	   <img src="avatar2.jpg " height="80">
+	  	     	    <div>
+	  	     		Aureliano Velasco <br> Mejia
+	  	        	</div>
+	  	         </a>
+	  	        	<ul class="menu">
+	  	        		<li> <a href="#">Perfil</a></li>
+	  	        		<li> <a href="#">Experiencia</a></li>
+	  	        		<li> <a href="#">Habilidad</a></li>
+	  	        		<li> <a href="#">Contacto</a></li>
+	  	        	</ul>
+	  	     </nav>
+	  </header>
+	  <section class="perfilseccion">
+	  	<div class="perfilcontenedor">
+	  		<h1 class="perfiltitulo">Hola <br> soy Aureliano</h1>
+	  		<p class="perfildetalles">Soy un estudiante activo, social y responsable, actualmente estudio en el EMSaD64 Santa Maria Cuquila</p>
+	  		<button class="perfilbotondescargar">
+	  			Descargar CV
+	  		</button>
+	  	</div>
+	  		<div class="perfilfoto">
+	  			<img class="fotoperfilpng" src="perfilh.png">
+	  			<div class= "perfillineaamarilla"></div>
+	  		</div>
+	  		
+	  
+	  </section>
+
+	</body>
+</html>
